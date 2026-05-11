@@ -1,0 +1,42 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  background: #f6f6f6;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BUTTON */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* IMAGES */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* TITLES */
+h1, h2, h3, h4 {
+  font-weight: 600;
+}

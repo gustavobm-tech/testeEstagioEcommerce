@@ -1,0 +1,82 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.modal {
+  background: #fff;
+  width: 90%;
+  max-width: 520px;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  animation: scaleIn 0.2s ease-in-out;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: contain;
+  }
+
+  h2 {
+    margin-top: 16px;
+    font-size: 20px;
+  }
+
+  p {
+    margin: 8px 0;
+    color: #666;
+  }
+
+  strong {
+    display: block;
+    margin: 16px 0;
+    font-size: 22px;
+  }
+
+  .buy {
+    width: 100%;
+    padding: 12px;
+    background: #2f3bf5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: grey
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}

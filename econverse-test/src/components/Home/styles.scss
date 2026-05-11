@@ -1,0 +1,137 @@
+.home {
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  background: #ffffff;
+}
+
+.hero {
+  background: linear-gradient(90deg, #111, #333);
+  height: 280px;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  padding: 48px;
+  color: #fff;
+
+  button {
+    margin-top: 12px;
+    background: #ffd400;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
+
+.actions {
+  margin: 32px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  color: black
+
+  button {
+    padding: 14px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+.section-title {
+  display: flex;
+  align-items: center; // centraliza tudo verticalmente
+  gap: 16px;
+  margin: 32px 0 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+  }
+}
+
+
+.products-section {
+  margin: 48px 0;
+
+  h2 {
+    margin: 0;             
+    line-height: 1;   
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a73e8;
+    white-space: nowrap;
+  }
+}
+.products-section.relacionados{
+    margin-top: 32px;
+
+  h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.actions-relacionados {
+  display: flex;
+  justify-content: center;   /* centraliza horizontalmente */
+  gap: 20px;                  /* espaço entre os botões */
+  border: 1px solid #ccc; 
+  padding: 10px;
+}
+
+.actions-relacionados button {
+  padding: 6px 14px;
+  color: black;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+
+
+.banner {
+  margin: 48px 0;
+  background: #111;
+  height: 220px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 32px;
+  color: #fff;
+
+  button {
+    margin-top: 12px;
+    background: #ffd400;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+  }
+}
+
+.brands {
+  margin: 48px 0;
+  text-align: center;
+
+  .brands-list {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    span {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+  }
+}

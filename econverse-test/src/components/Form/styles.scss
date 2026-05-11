@@ -1,0 +1,60 @@
+.newsletter {
+  background: #2c1f4a;
+  color: #ffffff;
+  padding: 32px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  &__text {
+    h2 {
+      margin-bottom: 8px;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.85;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    input[type="text"],
+    input[type="email"] {
+      height: 42px;
+      padding: 0 12px;
+      border-radius: 6px;
+      border: none;
+      width: 200px;
+      outline: none;
+    }
+
+    button {
+      height: 42px;
+      padding: 0 20px;
+      background: #ffc400;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  &__terms {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
